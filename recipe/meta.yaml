@@ -1,6 +1,6 @@
 {% set name = "conda-prefix-replacement" %}
 {% set version = "0.1.0" %}
-{% set sha256 = "90c274e82cd98c4e77d567ff693ddd53ec8d9bcc611ac4c0c4ae699484abd20e" %}
+{% set sha256 = "c73a732f2ba0abf57fc4764d87e478c35b19ce1b2b98d4622d8cdaf098bd56c4" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
     - six
